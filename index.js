@@ -26,7 +26,7 @@ class GenNumber extends React.Component{
                 React.createElement("p", {className: "level"}, "Level: ", this.props.level.main, " - ", this.props.level.sub), 
                 React.createElement("p", {className: "mistakes"}, "Wrong: ", this.props.wrong, "/3")),
             React.createElement("p", {className: "divider"}, "############################"),
-            React.createElement("p", {className: "number", id: "number"}, this.props.wrong < 3 ? atob(this.props.question) : '????')));
+            React.createElement("p", {className: "number", id: "number"}, this.props.wrong < 3 ? atob(this.props.question) : 'You Lose!')));
     }
 }
 
